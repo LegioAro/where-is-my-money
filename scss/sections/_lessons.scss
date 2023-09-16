@@ -83,6 +83,14 @@
   }
 }
 
+@media (max-width: 1000px) {
+  .lessons {
+    &__desc-list {
+      margin-bottom: 50px;
+    }
+  }
+}
+
 @media (max-width: 768px) {
   .lessons {
     &__desc {
@@ -92,6 +100,9 @@
           font-size: 18px;
         }
       }
+    }
+    &__desc-list {
+      margin-bottom: 36px;
     }
   }
 }

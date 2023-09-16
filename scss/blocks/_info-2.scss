@@ -18,6 +18,12 @@
 
   &__item {
     min-height: 119px;
+
+    span {
+      color: var(--color-select);
+      font-size: 18px;
+      font-weight: 700;
+    }
   }
 
   &__desc {
