@@ -1,0 +1,146 @@
+.packages {
+  margin-bottom: 100px;
+  &__wrapper {
+  }
+
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+  }
+
+  &__item {
+    padding: 34px 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item-title {
+    text-align: center;
+    font-family: var(--font-text-2);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+
+    background: linear-gradient(93deg, #409fd9 0%, #40c7d9 50.52%, #4058d9 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  &__item-list {
+    padding: 0 20px;
+    margin-bottom: 30px;
+  }
+
+  &__item-list-elem {
+    font-size: 18px;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &.--line {
+      opacity: 0.3;
+    }
+  }
+
+  &__item-infos-wrapper {
+    margin: auto 0 0;
+  }
+
+  &__item-infos {
+    margin-bottom: 30px;
+  }
+
+  &__item-info {
+    display: flex;
+    align-items: center;
+  }
+
+  &__item-info-img {
+    width: 100%;
+    max-width: 80px;
+    margin-right: 6px;
+  }
+
+  &__item-info-desc {
+  }
+
+  &__item-info-title {
+    color: var(--color-select);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 700;
+  }
+
+  &__item-info-text {
+    font-size: 18px;
+    font-weight: 700;
+
+    span {
+      font-weight: 400;
+    }
+  }
+
+  &__item-btn-wrapper {
+    padding: 0 20px;
+  }
+
+  &__item-btn {
+    font-size: 16px;
+    font-weight: 700;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .packages {
+    &__item-title {
+      font-size: 20px;
+    }
+    &__item-list-elem {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .packages {
+    &__items {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    &__item {
+      padding: 34px 0;
+    }
+
+    &__item-title {
+      font-size: 24px;
+    }
+    &__item-list-elem {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .packages {
+    &__item-title {
+      font-size: 20px;
+    }
+    &__item-list-elem {
+      font-size: 16px;
+    }
+  }
+}

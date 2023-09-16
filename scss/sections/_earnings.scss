@@ -1,0 +1,150 @@
+.earnings {
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 1;
+
+  &__wrapper {
+  }
+
+  &__title {
+    margin-bottom: 32px;
+  }
+
+  &__info {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+  }
+
+  &__info-img {
+    width: 100%;
+    max-width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    background-color: var(--color-select);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    img {
+      display: flex;
+      width: 100%;
+      max-width: 108px;
+      height: 108px;
+    }
+  }
+
+  &__info-text {
+    width: 100%;
+    max-width: 543px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+
+  &__desc-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+
+  &__desc {
+    &:first-child {
+      padding: 32px 92px 32px 52px;
+    }
+
+    p {
+      font-size: 18px;
+      margin-bottom: 14px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      span {
+        font-weight: 700;
+        color: var(--color-select);
+      }
+    }
+  }
+
+  &__desc-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 850px) {
+  .earnings {
+    &__title {
+      text-align: center;
+    }
+    &__info {
+      max-width: 650px;
+      margin: 0 auto 24px;
+    }
+    &__desc-items {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 650px;
+      margin: 0 auto;
+    }
+    &__desc {
+      &:first-child {
+        padding: 32px 52px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .earnings {
+    &__info-img {
+      max-width: 100px;
+      height: 100px;
+      img {
+        max-width: 80px;
+        height: 80px;
+      }
+    }
+    &__info-text {
+      font-size: 20px;
+    }
+    &__desc {
+      &:first-child {
+        padding: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .earnings {
+    &__info-img {
+      max-width: 80px;
+      height: 80px;
+
+      img {
+        max-width: 60px;
+        height: 60px;
+      }
+    }
+    &__info-text {
+      font-size: 18px;
+    }
+    &__desc {
+      p {
+        font-size: 16px;
+      }
+    }
+    &__desc-title {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .earnings {
+    &__info-img {
+      display: none;
+    }
+  }
+}

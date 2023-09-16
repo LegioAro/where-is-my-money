@@ -1,0 +1,26 @@
+.info-2 {
+  position: relative;
+  margin-bottom: 70px;
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    max-width: 670px;
+    text-align: center;
+    margin: 0 auto 36px;
+  }
+
+  &__items {
+    margin-bottom: 36px;
+  }
+
+  &__item {
+    min-height: 119px;
+  }
+
+  &__desc {
+    margin: 0 auto;
+  }
+}

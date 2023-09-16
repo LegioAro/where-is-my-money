@@ -1,0 +1,238 @@
+.materials {
+  margin-bottom: 45px;
+  position: relative;
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    max-width: 980px;
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+
+  &__desc {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 12px;
+    margin-bottom: 70px;
+  }
+
+  &__desc-item {
+    padding: 30px 18px;
+    &:last-child {
+      grid-column: 1/4;
+      padding: 20px;
+      text-align: center;
+    }
+  }
+
+  &__desc-item-title {
+    color: var(--color-select);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  &__desc-item-list {
+    margin-top: 32px;
+  }
+
+  &__desc-item-elem {
+    margin-bottom: 24px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__desc-item-subtitle {
+    padding-left: 26px;
+    &::before {
+      width: 18px;
+      height: 18px;
+      top: 2px;
+    }
+    span {
+      font-size: 16px;
+      color: var(--color-select);
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+  }
+
+  &__desc-item-text {
+    font-size: 14px;
+  }
+
+  &__desc-item-img {
+    width: 100%;
+    max-width: 348px;
+    height: 348px;
+    border-radius: 50%;
+    background-color: var(--color-select);
+    display: flex;
+    overflow: hidden;
+    margin: auto;
+  }
+
+  &__items {
+  }
+
+  &__item {
+    margin-bottom: 48px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:nth-child(odd) {
+      .materials__item-content {
+        flex-direction: row-reverse;
+      }
+      .materials__item-img {
+        margin-right: 0;
+        margin-left: 40px;
+      }
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 36px;
+    text-align: center;
+  }
+
+  &__item-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__item-img {
+    width: 100%;
+    max-width: 310px;
+    margin-right: 40px;
+  }
+
+  &__item-text {
+    padding: 64px 35px;
+    width: 100%;
+    max-width: 780px;
+    p {
+      margin-bottom: 16px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      span {
+        color: var(--color-select);
+        font-size: 18px;
+        font-style: italic;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__item-list {
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__item-list-elem {
+    font-size: 16px;
+    padding-left: 26px;
+    margin-bottom: 16px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    span {
+      font-weight: 700;
+      color: var(--color-select);
+    }
+    &::before {
+      width: 18px;
+      height: 18px;
+      top: 1px;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .materials {
+    &__desc-item-img {
+      max-width: 280px;
+      height: 280px;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .materials {
+    &__desc {
+      grid-template-columns: repeat(1, 1fr);
+      max-width: 768px;
+      margin: 0 auto 70px;
+    }
+    &__desc-item {
+      &:nth-child(1) {
+        order: 2;
+      }
+      &:nth-child(2) {
+        order: 3;
+      }
+      &:nth-child(4) {
+        order: 4;
+      }
+      &:last-child {
+        grid-column: 1/2;
+      }
+    }
+    &__desc-item-img {
+      order: 1;
+      max-width: 280px;
+      height: 280px;
+    }
+    &__item-img {
+      max-width: 250px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .materials {
+    &__desc {
+      max-width: 550px;
+    }
+    &__item-text {
+      padding: 40px 20px;
+    }
+    &__item-img {
+      max-width: 200px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .materials {
+    &__item {
+      &:nth-child(odd) {
+        .materials__item-content {
+          flex-direction: column;
+        }
+        .materials__item-img {
+          margin-left: 0px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+    &__item-content {
+      flex-direction: column;
+    }
+    &__item-img {
+      margin-bottom: 20px;
+    }
+  }
+}

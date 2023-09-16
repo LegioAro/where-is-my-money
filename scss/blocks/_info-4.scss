@@ -1,0 +1,23 @@
+.info-4 {
+  margin-bottom: 77px;
+  &__wrapper {
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 67px 26px;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-4 {
+    margin-bottom: 70px;
+    &__wrapper {
+      padding: 40px 10px;
+    }
+  }
+}

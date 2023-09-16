@@ -1,0 +1,36 @@
+//Global
+@import './global/fonts';
+@import './global/var';
+@import './global/reset';
+@import './global/global';
+
+//Moduls
+@import './moduls/btn';
+@import './moduls/title';
+@import './moduls/list-item';
+@import './moduls/items';
+@import './moduls/desc';
+@import './moduls/form';
+@import './moduls/modal';
+
+//Blocks
+@import './blocks/info';
+@import './blocks/info-2';
+@import './blocks/info-3';
+@import './blocks/info-4';
+@import './blocks/info-5';
+@import './blocks/info-6';
+
+//Sections
+@import './sections/header';
+@import './sections/earnings';
+@import './sections/reasons';
+@import './sections/lessons';
+@import './sections/online';
+@import './sections/materials';
+@import './sections/about';
+@import './sections/more';
+@import './sections/results';
+@import './sections/packages';
+@import './sections/description';
+@import './sections/footer';

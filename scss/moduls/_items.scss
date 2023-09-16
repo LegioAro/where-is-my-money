@@ -1,0 +1,35 @@
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -12px -10px;
+  &__item-wrapper {
+    padding: 12px 10px;
+    width: 100%;
+    max-width: 33.3%;
+  }
+
+  &__item {
+    padding: 5px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 950px) {
+  .items {
+    &__item-wrapper {
+      max-width: 50%;
+    }
+  }
+}
+
+@media (max-width: 550px) {
+  .items {
+    &__item-wrapper {
+      max-width: 100%;
+    }
+  }
+}

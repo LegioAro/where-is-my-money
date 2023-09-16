@@ -1,0 +1,56 @@
+.title {
+  color: #409fd9;
+  font-family: var(--font-text-2);
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  span {
+    color: #333;
+    font-weight: inherit;
+  }
+
+  &--min {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 36px;
+
+    &--min {
+      font-size: 30px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+
+    &--min {
+      font-size: 24px;
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .title {
+    font-size: 24px;
+
+    &--min {
+      font-size: 20px;
+    }
+  }
+}
+
+@media (max-width: 350px) {
+  .title {
+    font-size: 20px;
+
+    &--min {
+      font-size: 17px;
+    }
+  }
+}

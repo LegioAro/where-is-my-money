@@ -1,0 +1,37 @@
+.info-3 {
+  margin-bottom: 100px;
+  position: relative;
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  &__desc {
+    margin: 0 auto 36px;
+  }
+
+  &__items {
+  }
+
+  &__item {
+    min-height: 98px;
+    text-align: center;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .info-3 {
+    margin-bottom: 70px;
+
+    &__item {
+      min-height: 50px;
+      font-size: 16px;
+    }
+  }
+}

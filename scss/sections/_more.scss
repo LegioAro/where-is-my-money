@@ -1,0 +1,165 @@
+.more {
+  margin-bottom: 100px;
+  &__wrapper {
+    position: relative;
+    z-index: 1;
+  }
+
+  &__title {
+    margin-bottom: 20px;
+  }
+
+  &__subtitle {
+    margin-bottom: 30px;
+    text-transform: lowercase;
+  }
+
+  &__content-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 100%;
+    max-width: 700px;
+    margin-right: 20px;
+  }
+
+  &__infos {
+    margin-bottom: 40px;
+  }
+
+  &__info {
+    width: 100%;
+    max-width: 580px;
+    padding: 48px 43px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    span {
+      font-weight: 900;
+      text-transform: uppercase;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 30px;
+  }
+
+  &__list-wrapper {
+    width: 100%;
+    max-width: 580px;
+  }
+
+  &__list-title {
+    font-family: var(--font-text-2);
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    span {
+      color: var(--color-select);
+      font-weight: inherit;
+    }
+  }
+
+  &__list {
+    margin-bottom: 20px;
+    padding: 42px;
+  }
+
+  &__list-item {
+    margin-bottom: 25px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__imgs {
+    width: 100%;
+    max-width: 342px;
+  }
+
+  &__img {
+    display: flex;
+    margin-bottom: 26px;
+    width: 100%;
+    max-width: 342px;
+    height: 342px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (max-width: 950px) {
+  .more {
+    &__imgs {
+      max-width: 250px;
+    }
+    &__img {
+      max-width: 250px;
+      height: 250px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .more {
+    margin-bottom: 70px;
+
+    &__imgs {
+      max-width: 200px;
+    }
+    &__img {
+      max-width: 200px;
+      height: 200px;
+    }
+  }
+}
+
+@media (max-width: 650px) {
+  .more {
+    &__imgs {
+      max-width: 150px;
+    }
+    &__img {
+      max-width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .more {
+    &__imgs {
+      display: none;
+    }
+    &__content {
+      margin-right: 0;
+    }
+    &__info {
+      padding: 40px 20px;
+      font-size: 16px;
+    }
+    &__list-title {
+      font-size: 18px;
+    }
+    &__list {
+      padding: 40px 20px;
+    }
+  }
+}
