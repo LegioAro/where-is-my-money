@@ -40,6 +40,12 @@ body {
   color: #fff;
 }
 
+.--bg-4 {
+  border-radius: 16px;
+  border: 2px solid var(--color-select);
+  color: var(--color-select);
+}
+
 .--line {
   text-decoration: line-through;
 }
